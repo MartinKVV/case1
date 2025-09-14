@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -14,15 +14,107 @@
         <nav>
             <a href="index.html">Startsida</a> |
             <a href="landskap.html">Rapa Nui</a> |
-            <a href="galleri.html">Galleri</a> |
-            <a href="evenemang.html">Evenemang</a>
+            <a href="evenemang.html">Spelkväll</a> |
+            <a href="galleri.html">Galleri</a>
         </nav>
     </header>
 
-    <h1>Evenemang</h1>
+    <h1>Spelkväll!</h1>
 
     <main>
 
+        <header>
+            <img src="images/spel_bild.jpeg" alt="Bild på olika sällskapsspel" width="400">
+        </header>
+
+        <h2>
+            Är du sugen på spelkväll?
+        </h2>
+
+        <p>
+            Välkommen till vår mysiga spelkväll!
+
+            Vi kommer att spela en blandning av brädspel, olika sällskapsspel och lite retrokänsla med Mario Party på
+            Gamecube eller Nintendo 64.
+        </p>
+        <p>
+            Vi planerar att träffas 1-2 gånger i månaden. Evenemanget är helt gratis och vi bjuder på fika! Vill du
+            bidra till stämningen är du välkommen att ta med dig något gott - kanske hembakade bullar eller annat
+            tilltugg.
+
+            Låter det som något för dig? anmäl dig nedan så hör vi av oss med mer information!
+        </p>
+
+        <p>
+            Vi siktar på att träffas varannan lördag!
+        </p>
+
+        <table>
+            <tr>
+                <th>Plats:</th>
+                <td>Centrala Stockholm! (Plats kan variera meddelas via e-mail)</td>
+            </tr>
+            <tr>
+                <th>När:</th>
+                <td>Varannan Lördag</td>
+            </tr>
+            <tr>
+                <th>Tid:</th>
+                <td>16:00-22:00</td>
+            </tr>
+            <tr>
+                <th>Pris:</th>
+                <td>Gratis! fika finns på plats</td>
+            </tr>
+        </table>
+
+        <p>
+            Om det låter som något för dig så fyll i formuläret!
+        </p>
+
+        <form action="skickat.html" method="GET">
+
+            <fieldset>
+
+                <p>
+                    <label for="firstname">Förnamn:</label>
+                    <input type="text" id="firstname" name="firstname" size="15">
+                </p>
+
+                <p>
+                    <label for="lastname">Efternamn:</label>
+                    <input type="text" id="lastname" name="lastname" size="15">
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" size="15">
+                </p>
+
+                <p>
+                    <label for="telefon">Telefon:</label>
+                    <input type="text" id="telefon" name="telefon" size="15">
+                </p>
+
+                <p>
+                    <label for="allergi">Allergi?</label>
+                    <select id="allergi" name="allergi">
+                        <option value="nej">Nej</option>
+                        <option value="ja">Ja</option>
+                    </select>
+
+                <p>
+                    <label for="information">Övrig information</label><br>
+                    <textarea name="information" id="information" cols="30" rows="10"
+                        placeholder="Skriv gärna vilka allergier om du har svarat ja, eller några speciella önskemål eller om du har några frågor!"></textarea>
+                </p>
+
+                <input type="submit" value="Skicka">
+                <input type="reset" value="Återställ">
+
+            </fieldset>
+
+        </form>
 
     </main>
 
